@@ -1,0 +1,14 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+}
+
+header, footer {
+    background-color: antiquewhite;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
