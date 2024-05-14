@@ -9,16 +9,43 @@ header, footer {
     background-color: antiquewhite;
 }
 
-header, footer, section {
-    margin: 0 20px;
+header {
+    padding-bottom: 10px;
+    margin-bottom: 1%;
 }
 
-nav ul {
+section {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 1%;
+}
+
+header > h1, footer > p {
+    margin: 0;
+}
+
+header nav ul, footer nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-footer {
-    text-align: center;
+header h1 {
+    padding-left: 20px;
+}
+
+aside h1 {
+    padding-left: 5px;
+}
+
+header nav ul {
+    margin-bottom: 0;
+}
+
+footer nav ul {
+    margin-top: 0;
 }
