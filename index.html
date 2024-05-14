@@ -9,28 +9,74 @@
 <body>
     <header>
         <h1> Portfolio - Robin Courault </h1>
-        <nav>
+        <nav aria-label="navigation-bar-header">
             <ul>
                 <li> Accueil </li>
                 <li> CV </li>
-                <li> À Propos </li>
-                <li> Contact </li>
+                <li> À Propos de moi </li>
+                <li> Projets </li>
+                <li> Me contacter </li>
             </ul>
         </nav>
     </header>
 
-    <aside></aside>
+    <aside>
+        <h3> Barre de raccourcis </h3>
+    </aside>
 
-    <section>
+    <section id="home_page">
         <main>
             <section>
                 <h2> Robin Courault - Alternant Développeur FullStack </h2>
-                <img src="" alt="Robin Courault - la personne concernée par le portfolio"/>
+                <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio"/>
             </section>
         </main>
     </section>
 
-    <footer>2024 - Robin Courault</footer>
+    <section id="cv_page" hidden="true">
+        <main>
+            <section>
+                <h2> Curriculum Vitae </h2>
+            </section>
+        </main>
+    </section>
+
+    <section id="presentation_page" hidden="true">
+        <main>
+            <section>
+                <h2> À Propos de moi </h2>
+            </section>
+        </main>
+    </section>
+
+    <section id="presentation_page" hidden="true">
+        <main>
+            <section>
+                <h2> Mes Projets </h2>
+            </section>
+        </main>
+    </section>
+
+    <section id="contact_page" hidden="true">
+        <main>
+            <section>
+                <h2> Me contacter </h2>
+            </section>
+        </main>
+    </section>
+
+    <footer>
+        <nav aria-label="navigation-bar-footer">
+            <ul>
+                <li> Accueil </li>
+                <li> CV </li>
+                <li> À Propos de moi </li>
+                <li> Projets </li>
+                <li> Me contacter </li>
+            </ul>
+        </nav>
+        <p> 2024 - Robin Courault </p>
+    </footer>
 </body>
 
 <script src="./main.js"></script>
