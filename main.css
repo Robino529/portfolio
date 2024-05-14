@@ -9,8 +9,16 @@ header, footer {
     background-color: antiquewhite;
 }
 
+header, footer, section {
+    margin: 0 20px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+}
+
+footer {
+    text-align: center;
 }
