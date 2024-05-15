@@ -12,19 +12,19 @@
         <nav aria-label="navigation-bar-header">
             <ul>
                 <li>
-                    <button onclick="switchPage('home')"> Accueil </button>
+                    <button onclick="switchPage('home')" class="selected" id="home_page-btn"> Accueil </button>
                 </li>
                 <li>
-                    <button onclick="switchPage('cv')"> CV </button>
+                    <button onclick="switchPage('cv')" id="cv_page-btn"> CV </button>
                 </li>
                 <li>
-                    <button onclick="switchPage('presentation')"> À Propos de moi </button>
+                    <button onclick="switchPage('presentation')" id="presentation_page-btn"> À Propos de moi </button>
                 </li>
                 <li>
-                    <button onclick="switchPage('projets')"> Projets </button>
+                    <button onclick="switchPage('projets')" id="projets_page-btn"> Projets </button>
                 </li>
                 <li>
-                    <button onclick="switchPage('contact')"> Me contacter </button>
+                    <button onclick="switchPage('contact')" id="contact_page-btn"> Me contacter </button>
                 </li>
             </ul>
         </nav>
@@ -40,7 +40,7 @@
                 <main>
                     <section>
                         <h2> Robin Courault - Alternant Développeur FullStack </h2>
-                        <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio" width="400" height="600"/>
+                        <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio" width="400" height="500"/>
                     </section>
                 </main>
             </section>
@@ -49,7 +49,7 @@
                 <main>
                     <section>
                         <h2> Curriculum Vitae </h2>
-                        <img src="./elements/CV.png" alt="Curriculum Vitae - Robin Courault" width="400" height="600"/>
+                        <img id="cv" src="./elements/CV.png" alt="Curriculum Vitae - Robin Courault" width="500" height="700"/>
                     </section>
                 </main>
             </section>
@@ -79,29 +79,6 @@
             </section>
         </main>
     </div>
-
-    <footer>
-        <nav aria-label="navigation-bar-footer">
-            <ul>
-                <li>
-                    <button onclick="switchPage('home')"> Accueil </button>
-                </li>
-                <li>
-                    <button onclick="switchPage('cv')"> CV </button>
-                </li>
-                <li>
-                    <button onclick="switchPage('presentation')"> À Propos de moi </button>
-                </li>
-                <li>
-                    <button onclick="switchPage('projets')"> Projets </button>
-                </li>
-                <li>
-                    <button onclick="switchPage('contact')"> Me contacter </button>
-                </li>
-            </ul>
-        </nav>
-        <p> 2024 - Robin Courault </p>
-    </footer>
 </body>
 
 <script src="./main.js"></script>
