@@ -18,7 +18,7 @@
                     <button onclick="switchPage('cv')" id="cv_page-btn"> CV </button>
                 </li>
                 <li>
-                    <button onclick="switchPage('presentation')" id="presentation_page-btn"> À Propos de moi </button>
+                    <button onclick="switchPage('presentation')" id="presentation_page-btn"> À propos de moi </button>
                 </li>
                 <li>
                     <button onclick="switchPage('projets')" id="projets_page-btn"> Projets </button>
@@ -36,7 +36,10 @@
                 <main>
                     <section>
                         <h2> Robin Courault - Alternant Développeur FullStack </h2>
-                        <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio" width="400" height="500"/>
+                        <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio"/>
+                        <p>Bonjour, je suis Robin Courault et je vous souhaite la bienvenue sur mon portfolio dans lequel vous trouverez notamment la description de <button class="link" onclick="switchPage('projets')">mes différents projets étudiants, personnels et professionnels</button> mais également <button class="link" onclick="switchPage('cv')">mon CV sous deux formes</button>.</p>
+                        <p>Une description de ma personne et de mon parcours est disponible sur la page <button class="link" onclick="switchPage('presentation')"><i>À propos de moi</i></button>.</p>
+                        <p>Si vous souhaitez me contacter ou me retrouver en ligne, la page <button class="link" onclick="switchPage('contact')"><i>Me contacter</i></button> vous sera utile.</p>
                     </section>
                 </main>
             </section>
@@ -45,19 +48,19 @@
                 <main>
                     <section>
                         <h2> Curriculum Vitae </h2>
-                        <div class="d-flex">
+                        <div class="d-flex sp-evenly">
                             <div class="block-img">
                                 <img id="cv-1" src="./elements/CV.png" alt="Curriculum Vitae - Robin Courault" width="500" height="700"/>
                                 <a class="btn dl-btn" href="./elements/CV.pdf" download="CV - Robin Courault.pdf">
+                                    <p>Télécharger</p>
                                     <img class="icon" src="./elements/dl-icon.png" alt="icône de téléchargement"/>
-                                    Télécharger
                                 </a>
                             </div>
                             <div class="block-img">
                                 <img id="cv-2" src="./elements/CV - 2.0.png" alt="Curriculum Vitae - Robin Courault" width="500" height="700"/>
                                 <a class="btn dl-btn" href="./elements/CV - 2.0.pdf" download="CV - Robin Courault.pdf">
+                                    <p>Télécharger</p>
                                     <img class="icon" src="./elements/dl-icon.png" alt="icône de téléchargement"/>
-                                    Télécharger
                                 </a>
                             </div>
                         </div>
@@ -89,15 +92,21 @@
                         <hr/>
                         <ul class="u-list">
                             <li>
-                                <a class="btn btn-link" href="https://github.com/Robino529"> Mon espace Github </a>
+                                <a class="btn btn-link" href="https://github.com/Robino529">
+                                    <img class="icon" src="./elements/github-icon.png" alt="icône de github"/>
+                                    <p>Mon espace Github</p>
+                                </a>
                             </li>
                             <li>
-                                <a class="btn btn-link" href="https://www.linkedin.com/in/robin-courault-30231a268/"> Mon compte Linkedin </a>
+                                <a class="btn btn-link" href="https://www.linkedin.com/in/robin-courault-30231a268/">
+                                    <img class="icon" src="./elements/linkedin-icon.png" alt="icône de linkedin"/>
+                                    <p>Mon compte Linkedin</p>
+                                </a>
                             </li>
                             <li>
-                                <a class="btn btn-link btn-mail" href="mailto:robin.courault@gmail.com">
+                                <a class="btn btn-link" href="mailto:robin.courault@gmail.com">
                                     <img class="icon" src="./elements/mail-icon.png" alt="icône d'email"/>
-                                    Mon email
+                                    <p>Mon email</p>
                                 </a>
                             </li>
                         </ul>

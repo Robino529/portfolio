@@ -71,6 +71,10 @@ aside h3 {
     justify-content: center;
 }
 
+.d-flex.sp-evenly {
+    justify-content: space-evenly;
+}
+
 .btn {
     color: black;
     cursor: pointer;
@@ -85,18 +89,49 @@ aside h3 {
     border-radius: 5px;
 }
 
+.dl-btn p, .btn-link p {
+    display: inline-block;
+    margin: 5px;
+}
+
 .dl-btn:hover {
     background-color: #c8c8db;
     border: 1px solid #af99ff;
 }
 
-.btn-link {
+.btn-link, .dl-btn {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-link p {
     font-weight: 500;
 }
 
-.btn-link:hover {
+.btn-link:hover p {
     color: blueviolet;
     text-decoration: underline;
+}
+
+.icon {
+    height: 32px;
+    margin: 0 10px;
+}
+
+.link {
+    background: none;
+    border: none;
+    font-size: medium;
+    text-decoration: underline;
+    color: blue;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: blueviolet;
 }
 
 .u-list {
