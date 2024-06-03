@@ -50,9 +50,12 @@ aside h3 {
     padding-left: 10px;
 }
 
+/*
 #page {
     display: flex;
+    justify-content: center;
 }
+*/
 
 #page > #corps {
     width: 100%;
@@ -60,6 +63,46 @@ aside h3 {
     text-align: center;
 }
 
-section {
-    padding-left: 20px;
+.d-flex {
+    display: flex;
 }
+
+.d-flex.center {
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dl-btn {
+    background-color: #af99ff;
+    border: 1px solid #c8c8db;
+    border-radius: 5px;
+}
+
+.dl-btn::after {
+    content: url("./elements/dl-icon.png");
+    display: inline-block;
+    height: 24px;
+}
+
+.dl-btn:hover {
+    background-color: #c8c8db;
+    border: 1px solid #af99ff;
+}
+
+.btn-mail::before {
+    content: url("./elements/mail-icon.png");
+    display: inline-block;
+    height: 24px;
+}
+
+/*
+section {
+    //
+}
+*/
