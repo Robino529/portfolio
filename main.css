@@ -85,21 +85,9 @@ aside h3 {
     border-radius: 5px;
 }
 
-.dl-btn::after {
-    content: url("./elements/dl-icon.svg");
-    display: inline-block;
-    height: 24px;
-}
-
 .dl-btn:hover {
     background-color: #c8c8db;
     border: 1px solid #af99ff;
-}
-
-.btn-mail::before {
-    content: url("./elements/mail-icon.svg");
-    display: inline-block;
-    height: 24px;
 }
 
 .btn-link {
@@ -113,6 +101,7 @@ aside h3 {
 
 .u-list {
     list-style: none;
+    padding: 0 0 0 0;
 }
 
 .u-list li {
