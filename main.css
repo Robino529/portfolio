@@ -54,14 +54,9 @@ aside h3 {
     display: flex;
 }
 
-#page > aside {
-    width: 15%;
-    min-width: 200px;
-}
-
 #page > #corps {
-    width: 85%;
-    min-width: 650px;
+    width: 100%;
+    max-width: 1080px;
     text-align: center;
 }
 
