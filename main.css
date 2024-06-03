@@ -72,6 +72,7 @@ aside h3 {
 }
 
 .btn {
+    color: black;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
@@ -85,7 +86,7 @@ aside h3 {
 }
 
 .dl-btn::after {
-    content: url("./elements/dl-icon.png");
+    content: url("./elements/dl-icon.svg");
     display: inline-block;
     height: 24px;
 }
@@ -96,9 +97,26 @@ aside h3 {
 }
 
 .btn-mail::before {
-    content: url("./elements/mail-icon.png");
+    content: url("./elements/mail-icon.svg");
     display: inline-block;
     height: 24px;
+}
+
+.btn-link {
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.u-list {
+    list-style: none;
+}
+
+.u-list li {
+    margin-bottom: 3rem;
 }
 
 /*
