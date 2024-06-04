@@ -11,6 +11,10 @@ header {
     margin-bottom: 1%;
 }
 
+section > section {
+    margin-left: 3rem;
+}
+
 header > h1 {
     margin: 0;
     padding-left: 20px;
