@@ -32,21 +32,21 @@
 
     <div id="page" class="d-flex center">
         <main id="corps">
-            <section id="home_page">
+            <section id="home_page" class="txt-center">
                 <main>
-                    <section>
+                    <div>
                         <h2> Robin Courault - Alternant Développeur FullStack </h2>
                         <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio"/>
                         <p>Bonjour, je suis Robin Courault et je vous souhaite la bienvenue sur mon portfolio dans lequel vous trouverez notamment la description de <button class="link" onclick="switchPage('projets')">mes différents projets étudiants, personnels et professionnels</button> mais également <button class="link" onclick="switchPage('cv')">mon CV sous deux formes</button>.</p>
                         <p>Une description de ma personne et de mon parcours est disponible sur la page <button class="link" onclick="switchPage('presentation')"><i>À propos de moi</i></button>.</p>
                         <p>Si vous souhaitez me contacter ou me retrouver en ligne, la page <button class="link" onclick="switchPage('contact')"><i>Me contacter</i></button> vous sera utile.</p>
-                    </section>
+                    </div>
                 </main>
             </section>
 
-            <section id="cv_page" hidden="true">
+            <section id="cv_page" class="txt-center" hidden="true">
                 <main>
-                    <section>
+                    <div>
                         <h2> Curriculum Vitae </h2>
                         <div class="d-flex sp-evenly">
                             <div class="block-img">
@@ -64,33 +64,86 @@
                                 </a>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </main>
             </section>
 
             <section id="presentation_page" hidden="true">
                 <main>
-                    <section>
-                        <h2> À Propos de moi </h2>
-                    </section>
+                    <div>
+                        <h2 class="txt-center"> À Propos de moi </h2>
+                        <section>
+                            <h3> Qui suis-je ? </h3>
+                            <div class="txt-justify">
+                                <p> Je suis Robin Courault et suis né en 2003 à La Tronche (dans les environs de Grenoble).</p>
+                                <p> Je suis curieux, créatif, autonome, volontaire, ponctuel, organisé et dynamique.</p>
+                                <p>
+                                    Je suis encadrant dans un club de VTT de la Maison des Jeunes de mon village. De plus, je me suis pris d'adoration pour les 
+                                    jeux de rôle sur table (par exemple : Dungeons and Dragons), et j'ai donc débuté la construction de mon propre univers en 
+                                    organisant des séances de jeux de rôles mais je participe également à des séances quand j'en ai l'occasion en tant que joueur.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <h3> Mon parcours </h3>
+                            <div class="txt-justify">
+                                <p>
+                                    J'ai commencé mon parcours par un lycée général avec un baccalauréat typé scientifique en prenant les spécialités Mathématiques, 
+                                    Physique-Chimie ainsi que Numérique et Sciences Informatiques. Après ma première, je devais abandonner une spécialité et j'ai 
+                                    choisi la Physique-Chimie car je souhaitais continuer mes études dans le domaine de l'informatique donc mes deux autres spécialités 
+                                    étaient plus adaptées à mon projet. J'ai donc terminé le lycée avec un bac général Mathématiques & Numérique et Sciences Informatiques.
+                                </p>
+                            </div>
+                            <div class="txt-justify">
+                                <p>
+                                    J'ai continué mon parcours étudiant avec un Bachelor Universitaire et Technologique (BUT) en Informatique, spécialité développement 
+                                    d'applications à l'Institut Universitaire et Technologique (IUT) 2 de Grenoble. Lors de cette formation, j'ai pu développer des
+                                    compétences variées grâce à des cours en gestion de projets, de l'anglais, de l'économie mais aussi des cours plus techniques comme
+                                    des cours en réseau, en shell, en versioning, en devOps, en docker et en bases de données (SQL et NoSQL). Bien entendu des cours plus 
+                                    spécifiques au développement d'applications ont été également dispensé comme du C, du C++, du Java et du web (HTML/CSS/JS & PHP), 
+                                    sans oublier le Dart/Flutter, les API REST mais aussi de l'Angular et du Symfony ainsi que NodeJS.
+                                </p>
+                                <ul class="list-squares low-spaces">
+                                    <li>
+                                        Lors de ma seconde année, j'ai effectué deux mois de stage dans le Fablab MASTIC de l'Université Grenoble-Alpes (UGA), où 
+                                        j'ai pris en main Python avec le framework Django ainsi que le framework Vue.JS pour l'interface, ce stage m'a permis 
+                                        d'affiner et de mettre en pratique mes compétences en développement web.
+                                    </li>
+                                    <li>
+                                        Au début de ma troisième année, une semaine de game jam en python avec la library PyGame, en tant que chef d'équipe m'a permis 
+                                        d'expérimenter le développement intégral d'une application, ici un jeu, de l'idée à la mise en fonctionnement. Cette semaine a 
+                                        été particulièrement éprouvante car il fallait également apprendre le fonctionnement de PyGame, construire les images du jeu 
+                                        et faire une jaquette.
+                                    </li>
+                                    <li>
+                                        Ma troisième année s'est déroulée en alternance/apprentissage dans la société <i>Legi Team</i> dans laquelle j'ai beaucoup 
+                                        travaillé sur l'implémentation d'outils et de modules utilisant les intelligences artificielles génératives notamment 
+                                        celles d'openAI (ChatGPT) et de Microsoft avec Copilot Studio. Au cours de mon apprentissage, je n'ai fait que du web à 
+                                        travers des technologies standards (HTML/CSS/JS et PHP) accompagnées du système de gestion de contenu (CMS) SPIP adapté à 
+                                        l'activité de l'entreprise.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
                 </main>
             </section>
 
             <section id="projets_page" hidden="true">
                 <main>
-                    <section>
+                    <div>
                         <h2> Mes Projets </h2>
-                    </section>
+                    </div>
                 </main>
             </section>
 
-            <section id="contact_page" hidden="true">
+            <section id="contact_page" class="txt-center" hidden="true">
                 <main>
-                    <section>
+                    <div>
                         <h2> Me contacter </h2>
-                        <p></p>
+                        <p>Bienvenue sur la page de contact, n'hésitez pas à consulter mes profils ou à me contacter.</p>
                         <hr/>
-                        <ul class="u-list">
+                        <ul class="list-no-style big-spaces no-padding">
                             <li>
                                 <a class="btn btn-link" href="https://github.com/Robino529">
                                     <img class="icon" src="./elements/github-icon.png" alt="icône de github"/>
@@ -100,7 +153,7 @@
                             <li>
                                 <a class="btn btn-link" href="https://www.linkedin.com/in/robin-courault-30231a268/">
                                     <img class="icon" src="./elements/linkedin-icon.png" alt="icône de linkedin"/>
-                                    <p>Mon compte Linkedin</p>
+                                    <p>Mon profil Linkedin</p>
                                 </a>
                             </li>
                             <li>
@@ -110,7 +163,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </section>
+                    </div>
                 </main>
             </section>
         </main>

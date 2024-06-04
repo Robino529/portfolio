@@ -60,7 +60,6 @@ aside h3 {
 #page > #corps {
     width: 100%;
     max-width: 1080px;
-    text-align: center;
 }
 
 .d-flex {
@@ -134,17 +133,30 @@ aside h3 {
     color: blueviolet;
 }
 
-.u-list {
+.list-no-style {
     list-style: none;
-    padding: 0 0 0 0;
 }
 
-.u-list li {
+.list-squares {
+    list-style: square;
+}
+
+.low-spaces li {
+    margin-bottom: 5px;
+}
+
+.big-spaces li {
     margin-bottom: 3rem;
 }
 
-/*
-section {
-    //
+.no-padding {
+    padding: 0 0 0 0;
 }
-*/
+
+.txt-justify {
+    text-align: justify;
+}
+
+.txt-center {
+    text-align: center;
+}
