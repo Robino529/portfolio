@@ -45,11 +45,13 @@ function switchProjectCategory(buttonElem, forceOpen = false) {
 
 /*
 function definedSize() {
-    const minsize = document.querySelector('header').clientHeight + document.querySelector('#page').clientHeight + 20;
+    const boxsize = window.innerHeight - document.querySelector('header').clientHeight;
+    const minsize = document.querySelector('#page').clientHeight;
+
     if (minsize > window.innerHeight) {
-        document.querySelector('body').style.height = minsize + "px";
+        document.querySelector('#corps').style.height = minsize + "px";
     } else {
-        document.querySelector('body').style.height = window.innerHeight + "px";
+        document.querySelector('#corps').style.height = boxsize + "px";
     }
 }
 
