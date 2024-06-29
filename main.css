@@ -198,3 +198,77 @@ aside h3 {
 .txt-center {
     text-align: center;
 }
+
+#burger {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#burger span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+#burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media only screen and (max-width: 740px) {
+    #burger {
+        display: flex;
+    }
+
+    #navbar {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 300px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        list-style: none;
+        padding: 0;
+    }
+    
+    #navbar li {
+        text-align: center;
+    }
+    
+    #navbar li a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    #navbar li a:hover {
+        background-color: #575757;
+    }
+    
+    /* Afficher le menu lorsque la classe 'open' est ajoutée */
+    #navbar.open {
+        display: block;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+}

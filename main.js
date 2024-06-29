@@ -57,3 +57,13 @@ function definedSize() {
 
 window.onresize = definedSize;
 definedSize();*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.getElementById('burger');
+    const navBurger = document.getElementById('navbar');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('open');
+        navBurger.classList.toggle('open');
+    });
+});

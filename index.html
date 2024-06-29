@@ -10,7 +10,7 @@
     <header>
         <h1> Portfolio - Robin Courault </h1>
         <nav aria-label="navigation-bar-header">
-            <ul>
+            <ul id="navbar">
                 <li>
                     <button onclick="switchPage('home')" class="selected" id="home_page-btn"> Accueil </button>
                 </li>
@@ -27,6 +27,11 @@
                     <button onclick="switchPage('contact')" id="contact_page-btn"> Me contacter </button>
                 </li>
             </ul>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -144,24 +149,36 @@
                                         <section id="1st-year">
                                             <h3>Première année - BUT</h3>
                                             <section id="megasae">
-                                                <h4>Méga projet de fin de 1ère année</h3>
+                                                <h4>Méga projet de fin de 1ère année - SAEvent</h4>
+                                                <p>Le méga projet de fin de 1ère année était un projet pluridisciplinaire dont l'objectif était de mettre en pratique toutes les compétences acquises au cours de l'année. Le projet portait sur la création d'une application d'organisation événementielle, spécialisée sur un type d'évènement particulier.</p>
+                                                <p>Dans le cadre de ce projet, j'ai participé à la création d'une application d'organisation de tournois e-sport avec une équipe de 8 personnes. Cette application devait donc supporter l'affichage d'un arbre de tournoi, l'enregistrement de joueurs, l'enregistrement d'équipes composées de joueurs et l'enregistrement d'un évènement avec notamment sa localisation, sa date de début et sa date de fin ainsi que son nom et ses participants.</p>
+                                                <p>Du point de vue des technologies, pour ce projet, les technologies étaient imposées, pour l'interface nous avions JavaFx utilisant le FXml une syntaxe construite en XML et pour le code de l'application, nous devions utiliser Java. Nous avons développé en utilisant Git et IntellijIDEA pour le code ainsi que Figma pour concevoir l'interface, de nombreux diagrammes de conception étaient demandés, leur création a été réalisée avec VisualParadigm. Personnellement, j'ai contribué sur la plupart des domaines de l'application mais notamment au niveau de la gestion de projet, en réalisant la partie conception de l'application avec des diagrammes UML, et au niveau du code de l'application en Java.</p>
+                                                <p>Ce projet a été l'occasion d'avoir une première expérience du développement d'une application à partir de rien, cela nous a également fait découvrir le travail en équipe, notamment dans des équipes de plus de 2 ou 3 personnes. Au cours de ce projet, j'ai eu une mauvaise expérience avec mon chef d'équipe ou il s'est avéré que je faisais son travail de planification, d'organisation et de lien entre les différents membres, après ce projet, j'ai souhaité et ai été chef de projet dans la plupart de mes autres projets.</p>
                                             </section>
                                         </section>
 
                                         <section id="2nd-year">
                                             <h3>Seconde année - BUT</h3>
                                             <section id="ventesauxencheres">
-                                                <h4>Projet Site Web - BrickABrack</h3>
+                                                <h4>Projet Site Web - BrickABrack</h4>
+                                                <p>En milieu de seconde année, un projet de création d'un site web de ventes aux enchères a été lancé. Pour ce projet, nous étions une équipe de 7 personnes et j'ai été nommé chef de projet.</p>
+                                                <p>Pour commencer le projet, il fallait choisir un thème de vente, de notre côté, le thème choisi fût les constructions Lego®. Pour ce qui est de la cible choisie, nous avons décidé de partir sur la vente entre particuliers. Ensuite nous avons réalisé la gestion de projet avec notamment l'analyse des risques, la décision des technologies et l'expression des besoins. Puis la conception débuta avec la forme de la base de données et les données dont nous aurions besoin, simultanément à la conception de la base de données, la conception de l'interface avait également débuté ainsi que la conception du fonctionnement de l'application.</p>
+                                                <p>Nous avons décidé de partir sur un serveur séparé en deux environnements, un environnement de développement et un environnement de production, le serveur possédait un système d'intégration continu qui analysait le code envoyé sur Github pour le vérifier puis le déployer automatiquement, nous permettant d'avoir les avantages d'un système de versioning comme Git avec également un site de développement mis à jour en direct. Pour ce qui est de la base de données, nous avons sélectionné PostGreSQL, un système libre et complet qui était également celui utilisé durant nos cours. Du côté du développement du site en lui-même, nous avons utilisé PHP comme langage serveur, JavaScript, CSS et HTML, tous dans leur version native sans frameworks, déjà car l'équipe dans sa globalité ne souhaitait pas en utiliser par manque de connaissances, nous avions cependant retenu ReactJS comme framework ou Flutter et son langage Dart comme alternatives pour l'interface.</p>
+                                                <p>Le résultat final était plutôt complet avec : un système de compte et des avatars personnalisables en briques Lego ; des fiches de produit détaillées avec les 5 dernières enchères sur le produit et des propositions d'articles similaires ; un système de recherche complet avec des filtres sur les catégories, sur les prix et un choix du tri par date ou prix, une barre de recherche pour les noms ou la description d'articles était également présente. Finalement ce projet a été une bonne expérience de la construction complète d'un site web et de son environnement serveur.</p>
                                             </section>
                                             <section>
-                                                <h4>Projet Evolution Application - Stage2Poche</h3>
+                                                <h4>Projet Evolution Application - Stage2Poche</h4>
+                                                <p>Avant le stage de fin de seconde année, un nouveau projet a été réalisé, l'objectif était ici de mettre en pratique l'amélioration d'une application déjà existante. L'application était composée d'une application mobile android destinée à des étudiants cherchant un stage ainsi que d'un site web de back-office à destination du responsable des stages.</p>
+                                                <p>Nous étions pour ce projet une équipe de 6 personnes, dont j'étais une fois encore le chef de projet. Les technologies du projet étaient imposées car nous devions améliorer une application déjà existante et fonctionnelle, pour l'application mobile, nous étions donc en Android c'est une bibliothèque Java que nous avons utilisé dans l'outil Android Studio. Pour le back-office, c'était le framework Symfony qui devait être utilisé avec le langage PHP.</p>
+                                                <p>Ce projet a été complexe car tout semblait bien fonctionner aux premiers abords, donc nous avions commencé par faire des améliorations du côté de l'interface autant web que mobile. Cependant au cours du projet et notamment des tests, nous avons identifié de nombreux problèmes de redondances, de variables ou fonctions non utilisées, ou encore de requêtes incorrectes réalisées du côté de l'application mobile vers le serveur, notamment la base de données. La base de données a également été une amélioration à réaliser, nous l'avons passée sur la troisième forme normale en décomposant au maximum les données et les tables pour n'avoir aucune redondance et aucun champ vide.</p>
+                                                <p>Finalement le projet a été plutôt stressant déjà par la difficulté d'une tâche que nous n'avions encore jamais réalisé, l'amélioration d'une application existante, ensuite, par le peu de temps qui nous était accordé. C'est un projet qui a été formateur autant sur la découverte d'un nouveau type de tâche que sur la gestion du stress.</p>
                                             </section>
                                         </section>
 
                                         <section id="3rd-year">
                                             <h3>Troisième année - BUT</h3>
                                             <section id="gamejam">
-                                                <h4>Game Jam - PORTO le robot</h3>
+                                                <h4>Game Jam - PORTO le robot</h4>
                                                 <img src="./elements/Jaquette_Porto.png" alt="jaquette de notre jeu, PORTO"/>
                                             </section>
                                         </section>
@@ -173,10 +190,10 @@
                                         <section id="stagebutfablabmastic">
                                             <h3>Stage au Fablab MASTIC - Université Grenoble Alpes</h3>
                                             <section>
-                                                <h4>Pages de statistiques et archivage</h3>
+                                                <h4>Pages de statistiques et archivage</h4>
                                             </section>
                                             <section>
-                                                <h4>Adaptation Charte Graphique</h3>
+                                                <h4>Adaptation Charte Graphique</h4>
                                             </section>
                                         </section>
 
