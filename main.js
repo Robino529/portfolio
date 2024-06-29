@@ -12,17 +12,23 @@ function switchPage(pageName) {
 
         firstPageParcoured = firstPageParcoured.nextElementSibling;
     }
+
+    // rebind by default the open project category
+    const firstProjectCategory = document.querySelector('#projects-list :first-child button');
+    switchProjectCategory(firstProjectCategory, true);
 }
 
-function switchProjectCategory(buttonElem) {
+function switchProjectCategory(buttonElem, forceOpen = false) {
     let btnIsAlreadySelected = false;
     if(buttonElem.className.includes("selected")) {
         btnIsAlreadySelected = true;
     }
 
     if (btnIsAlreadySelected) {
-        buttonElem.className = buttonElem.className.substring(0, buttonElem.className.indexOf("selected")) 
-            + buttonElem.className.substring(buttonElem.className.indexOf("selected")+9);
+        if (!forceOpen) {
+            buttonElem.className = buttonElem.className.substring(0, buttonElem.className.indexOf("selected")) 
+                + buttonElem.className.substring(buttonElem.className.indexOf("selected")+9);
+        }
     } else {
         // on efface le bouton précédemment sélectionné
         document.querySelectorAll('#projects-list li button').forEach((elem) => {
@@ -36,3 +42,16 @@ function switchProjectCategory(buttonElem) {
         buttonElem.className = buttonElem.className + " selected";
     }
 }
+
+/*
+function definedSize() {
+    const minsize = document.querySelector('header').clientHeight + document.querySelector('#page').clientHeight + 20;
+    if (minsize > window.innerHeight) {
+        document.querySelector('body').style.height = minsize + "px";
+    } else {
+        document.querySelector('body').style.height = window.innerHeight + "px";
+    }
+}
+
+window.onresize = definedSize;
+definedSize();*/

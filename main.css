@@ -1,12 +1,13 @@
 body {
-    background-color: lavender;
+    /*background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(47, 0, 82) 35%, rgb(131, 0, 167) 100%) no-repeat;*/
+    background-color: whitesmoke;
     color: black;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: lightskyblue;
+    background-color: #d7d7d7;
     padding-bottom: 10px;
     margin-bottom: 1%;
 }
@@ -33,9 +34,9 @@ header nav ul li {
 }
 
 nav button {
-    border: 1px solid darkblue;
-    background-color: cornflowerblue;
-    color: black;
+    border: 1px solid white;
+    background-color: rgb(35, 35, 35);
+    color: white;
     padding: 8px;
     width: 100%;
     font-weight: bold;
@@ -44,9 +45,21 @@ nav button {
 }
 
 nav button:hover, nav button.selected {
-    border: 1px solid cornflowerblue;
-    background-color: darkblue;
-    color: white;
+    border: 1px solid rgb(35, 35, 35);;
+    color: black;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: white;
+}
+
+nav button.selected {
+    cursor: default;
+    background-color: rgb(138, 138, 138);
+}
+
+#projects-list button.selected {
     cursor: pointer;
 }
 
@@ -123,11 +136,12 @@ aside h3 {
 
 .btn-link p {
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .btn-link:hover p {
-    color: blueviolet;
-    text-decoration: underline;
+    color: rgb(209, 86, 209);
+    text-decoration: none;
 }
 
 .icon {
@@ -140,13 +154,13 @@ aside h3 {
     border: none;
     font-size: medium;
     text-decoration: underline;
-    color: blue;
+    color: darkviolet;
 }
 
 .link:hover {
     cursor: pointer;
     text-decoration: none;
-    color: blueviolet;
+    color: rgb(209, 86, 209);
 }
 
 .list-no-style {
