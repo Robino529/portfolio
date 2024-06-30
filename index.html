@@ -36,15 +36,18 @@
     </header>
 
     <div id="page" class="d-flex center">
+        <p id="follower"></p>
         <main id="corps">
             <section id="home_page" class="txt-center">
                 <main>
                     <div>
                         <h2> Robin Courault - Alternant Développeur FullStack </h2>
-                        <img src="./elements/profil.png" alt="Robin Courault - la personne concernée par le portfolio"/>
-                        <p>Bonjour, je suis Robin Courault et je vous souhaite la bienvenue sur mon portfolio dans lequel vous trouverez notamment la description de <button class="link" onclick="switchPage('projets')">mes différents projets étudiants, personnels et professionnels</button> mais également <button class="link" onclick="switchPage('cv')">mon CV sous deux formes</button>.</p>
-                        <p>Une description de ma personne et de mon parcours est disponible sur la page <button class="link" onclick="switchPage('presentation')"><i>À propos de moi</i></button>.</p>
-                        <p>Si vous souhaitez me contacter ou me retrouver en ligne, la page <button class="link" onclick="switchPage('contact')"><i>Me contacter</i></button> vous sera utile.</p>
+                        <img src="./elements/profil.png" alt="Robin Courault"/>
+                        <div>
+                            <p>Bonjour, je suis Robin Courault et je vous souhaite la bienvenue sur mon portfolio dans lequel vous trouverez notamment la description de <button class="link" onclick="switchPage('projets')">mes différents projets étudiants, personnels et professionnels</button> mais également <button class="link" onclick="switchPage('cv')">mon CV sous deux formes</button>.</p>
+                            <p>Une description de ma personne et de mon parcours est disponible sur la page <button class="link" onclick="switchPage('presentation')"><i>À propos de moi</i></button>.</p>
+                            <p>Si vous souhaitez me contacter ou me retrouver en ligne, la page <button class="link" onclick="switchPage('contact')"><i>Me contacter</i></button> vous sera utile.</p>
+                        </div>
                     </div>
                 </main>
             </section>
@@ -55,14 +58,14 @@
                         <h2> Curriculum Vitae </h2>
                         <div class="d-flex sp-evenly">
                             <div class="block-img">
-                                <img id="cv-1" src="./elements/CV.png" alt="Curriculum Vitae - Robin Courault" width="500" height="700"/>
+                                <img id="cv-1" src="./elements/CV.png" alt="Curriculum Vitae V1 - Robin Courault" width="500" height="700"/>
                                 <a class="btn dl-btn" href="./elements/CV.pdf" download="CV - Robin Courault.pdf">
                                     <p>Télécharger</p>
                                     <img class="icon" src="./elements/dl-icon.png" alt="icône de téléchargement"/>
                                 </a>
                             </div>
                             <div class="block-img">
-                                <img id="cv-2" src="./elements/CV - 2.0.png" alt="Curriculum Vitae - Robin Courault" width="500" height="700"/>
+                                <img id="cv-2" src="./elements/CV - 2.0.png" alt="Curriculum Vitae V2 - Robin Courault" width="500" height="700"/>
                                 <a class="btn dl-btn" href="./elements/CV - 2.0.pdf" download="CV - Robin Courault.pdf">
                                     <p>Télécharger</p>
                                     <img class="icon" src="./elements/dl-icon.png" alt="icône de téléchargement"/>
@@ -150,10 +153,13 @@
                                             <h3>Première année - BUT</h3>
                                             <section id="megasae">
                                                 <h4>Méga projet de fin de 1ère année - SAEvent</h4>
-                                                <p>Le méga projet de fin de 1ère année était un projet pluridisciplinaire dont l'objectif était de mettre en pratique toutes les compétences acquises au cours de l'année. Le projet portait sur la création d'une application d'organisation événementielle, spécialisée sur un type d'évènement particulier.</p>
-                                                <p>Dans le cadre de ce projet, j'ai participé à la création d'une application d'organisation de tournois e-sport avec une équipe de 8 personnes. Cette application devait donc supporter l'affichage d'un arbre de tournoi, l'enregistrement de joueurs, l'enregistrement d'équipes composées de joueurs et l'enregistrement d'un évènement avec notamment sa localisation, sa date de début et sa date de fin ainsi que son nom et ses participants.</p>
-                                                <p>Du point de vue des technologies, pour ce projet, les technologies étaient imposées, pour l'interface nous avions JavaFx utilisant le FXml une syntaxe construite en XML et pour le code de l'application, nous devions utiliser Java. Nous avons développé en utilisant Git et IntellijIDEA pour le code ainsi que Figma pour concevoir l'interface, de nombreux diagrammes de conception étaient demandés, leur création a été réalisée avec VisualParadigm. Personnellement, j'ai contribué sur la plupart des domaines de l'application mais notamment au niveau de la gestion de projet, en réalisant la partie conception de l'application avec des diagrammes UML, et au niveau du code de l'application en Java.</p>
-                                                <p>Ce projet a été l'occasion d'avoir une première expérience du développement d'une application à partir de rien, cela nous a également fait découvrir le travail en équipe, notamment dans des équipes de plus de 2 ou 3 personnes. Au cours de ce projet, j'ai eu une mauvaise expérience avec mon chef d'équipe ou il s'est avéré que je faisais son travail de planification, d'organisation et de lien entre les différents membres, après ce projet, j'ai souhaité et ai été chef de projet dans la plupart de mes autres projets.</p>
+                                                <div class="txt-justify">
+                                                    <p>Le méga projet de fin de 1ère année était un projet pluridisciplinaire dont l'objectif était de mettre en pratique toutes les compétences acquises au cours de l'année. Le projet portait sur la création d'une application d'organisation événementielle, spécialisée sur un type d'évènement particulier.</p>
+                                                    <p>Dans le cadre de ce projet, j'ai participé à la création d'une application d'organisation de tournois e-sport avec une équipe de 8 personnes. Cette application devait donc supporter l'affichage d'un arbre de tournoi, l'enregistrement de joueurs, l'enregistrement d'équipes composées de joueurs et l'enregistrement d'un évènement avec notamment sa localisation, sa date de début et sa date de fin ainsi que son nom et ses participants.</p>
+                                                    <p>Du point de vue des technologies, pour ce projet, les technologies étaient imposées, pour l'interface nous avions JavaFx utilisant le FXml une syntaxe construite en XML et pour le code de l'application, nous devions utiliser Java. Nous avons développé en utilisant Git et IntellijIDEA pour le code ainsi que Figma pour concevoir l'interface, de nombreux diagrammes de conception étaient demandés, leur création a été réalisée avec VisualParadigm. Personnellement, j'ai contribué sur la plupart des domaines de l'application mais notamment au niveau de la gestion de projet, en réalisant la partie conception de l'application avec des diagrammes UML, et au niveau du code de l'application en Java.</p>
+                                                    <p>Ce projet a été l'occasion d'avoir une première expérience du développement d'une application à partir de rien, cela nous a également fait découvrir le travail en équipe, notamment dans des équipes de plus de 2 ou 3 personnes. Au cours de ce projet, j'ai eu une mauvaise expérience avec mon chef d'équipe ou il s'est avéré que je faisais son travail de planification, d'organisation et de lien entre les différents membres, après ce projet, j'ai souhaité et ai été chef de projet dans la plupart de mes autres projets.</p>
+                                                </div>
+                                                <img src="./elements/LeanCanvas_MegaProjet.png" alt="Lean Canvas - Mega Projet"/>
                                             </section>
                                         </section>
 
@@ -161,17 +167,27 @@
                                             <h3>Seconde année - BUT</h3>
                                             <section id="ventesauxencheres">
                                                 <h4>Projet Site Web - BrickABrack</h4>
-                                                <p>En milieu de seconde année, un projet de création d'un site web de ventes aux enchères a été lancé. Pour ce projet, nous étions une équipe de 7 personnes et j'ai été nommé chef de projet.</p>
-                                                <p>Pour commencer le projet, il fallait choisir un thème de vente, de notre côté, le thème choisi fût les constructions Lego®. Pour ce qui est de la cible choisie, nous avons décidé de partir sur la vente entre particuliers. Ensuite nous avons réalisé la gestion de projet avec notamment l'analyse des risques, la décision des technologies et l'expression des besoins. Puis la conception débuta avec la forme de la base de données et les données dont nous aurions besoin, simultanément à la conception de la base de données, la conception de l'interface avait également débuté ainsi que la conception du fonctionnement de l'application.</p>
-                                                <p>Nous avons décidé de partir sur un serveur séparé en deux environnements, un environnement de développement et un environnement de production, le serveur possédait un système d'intégration continu qui analysait le code envoyé sur Github pour le vérifier puis le déployer automatiquement, nous permettant d'avoir les avantages d'un système de versioning comme Git avec également un site de développement mis à jour en direct. Pour ce qui est de la base de données, nous avons sélectionné PostGreSQL, un système libre et complet qui était également celui utilisé durant nos cours. Du côté du développement du site en lui-même, nous avons utilisé PHP comme langage serveur, JavaScript, CSS et HTML, tous dans leur version native sans frameworks, déjà car l'équipe dans sa globalité ne souhaitait pas en utiliser par manque de connaissances, nous avions cependant retenu ReactJS comme framework ou Flutter et son langage Dart comme alternatives pour l'interface.</p>
-                                                <p>Le résultat final était plutôt complet avec : un système de compte et des avatars personnalisables en briques Lego ; des fiches de produit détaillées avec les 5 dernières enchères sur le produit et des propositions d'articles similaires ; un système de recherche complet avec des filtres sur les catégories, sur les prix et un choix du tri par date ou prix, une barre de recherche pour les noms ou la description d'articles était également présente. Finalement ce projet a été une bonne expérience de la construction complète d'un site web et de son environnement serveur.</p>
+                                                <div style="overflow: hidden;">
+                                                    <img class="img-intxt left w-50" src="./elements/BrickaBrack_MainPage.png" alt="Page Principale du projet BrickABrack"/>
+                                                    <div class="txt-justify">
+                                                        <p>En milieu de seconde année, un projet de création d'un site web de ventes aux enchères a été lancé. Pour ce projet, nous étions une équipe de 7 personnes et j'ai été nommé chef de projet.</p>
+                                                        <p>Pour commencer le projet, il fallait choisir un thème de vente, de notre côté, le thème choisi fût les constructions Lego®. Pour ce qui est de la cible choisie, nous avons décidé de partir sur la vente entre particuliers. Ensuite nous avons réalisé la gestion de projet avec notamment l'analyse des risques, la décision des technologies et l'expression des besoins. Puis la conception débuta avec la forme de la base de données et les données dont nous aurions besoin, simultanément à la conception de la base de données, la conception de l'interface avait également débuté ainsi que la conception du fonctionnement de l'application.</p>
+                                                        <p>Nous avons décidé de partir sur un serveur séparé en deux environnements, un environnement de développement et un environnement de production, le serveur possédait un système d'intégration continu qui analysait le code envoyé sur Github pour le vérifier puis le déployer automatiquement, nous permettant d'avoir les avantages d'un système de versioning comme Git avec également un site de développement mis à jour en direct. Pour ce qui est de la base de données, nous avons sélectionné PostGreSQL, un système libre et complet qui était également celui utilisé durant nos cours. Du côté du développement du site en lui-même, nous avons utilisé PHP comme langage serveur, JavaScript, CSS et HTML, tous dans leur version native sans frameworks, déjà car l'équipe dans sa globalité ne souhaitait pas en utiliser par manque de connaissances, nous avions cependant retenu ReactJS comme framework ou Flutter et son langage Dart comme alternatives pour l'interface.</p>
+                                                        <p>Le résultat final était plutôt complet avec : un système de compte et des avatars personnalisables en briques Lego ; des fiches de produit détaillées avec les 5 dernières enchères sur le produit et des propositions d'articles similaires ; un système de recherche complet avec des filtres sur les catégories, sur les prix et un choix du tri par date ou prix, une barre de recherche pour les noms ou la description d'articles était également présente. Finalement ce projet a été une bonne expérience de la construction complète d'un site web et de son environnement serveur.</p>
+                                                    </div>
+                                                </div>
+                                                <img class="img-intxt left" src="./elements/BrickaBrack_product.png" alt="Page de produit du projet BrickABrack"/>
+                                                <img class="img-intxt right w-50" src="./elements/BrickaBrack_Research.png" alt="Page de recherche du projet BrickABrack"/>
+                                                <img src="./elements/BrickaBrack_Register.png" alt="Page de création d'un compte du projet BrickABrack"/>
                                             </section>
                                             <section>
                                                 <h4>Projet Evolution Application - Stage2Poche</h4>
-                                                <p>Avant le stage de fin de seconde année, un nouveau projet a été réalisé, l'objectif était ici de mettre en pratique l'amélioration d'une application déjà existante. L'application était composée d'une application mobile android destinée à des étudiants cherchant un stage ainsi que d'un site web de back-office à destination du responsable des stages.</p>
-                                                <p>Nous étions pour ce projet une équipe de 6 personnes, dont j'étais une fois encore le chef de projet. Les technologies du projet étaient imposées car nous devions améliorer une application déjà existante et fonctionnelle, pour l'application mobile, nous étions donc en Android c'est une bibliothèque Java que nous avons utilisé dans l'outil Android Studio. Pour le back-office, c'était le framework Symfony qui devait être utilisé avec le langage PHP.</p>
-                                                <p>Ce projet a été complexe car tout semblait bien fonctionner aux premiers abords, donc nous avions commencé par faire des améliorations du côté de l'interface autant web que mobile. Cependant au cours du projet et notamment des tests, nous avons identifié de nombreux problèmes de redondances, de variables ou fonctions non utilisées, ou encore de requêtes incorrectes réalisées du côté de l'application mobile vers le serveur, notamment la base de données. La base de données a également été une amélioration à réaliser, nous l'avons passée sur la troisième forme normale en décomposant au maximum les données et les tables pour n'avoir aucune redondance et aucun champ vide.</p>
-                                                <p>Finalement le projet a été plutôt stressant déjà par la difficulté d'une tâche que nous n'avions encore jamais réalisé, l'amélioration d'une application existante, ensuite, par le peu de temps qui nous était accordé. C'est un projet qui a été formateur autant sur la découverte d'un nouveau type de tâche que sur la gestion du stress.</p>
+                                                <div class="txt-justify">
+                                                    <p>Avant le stage de fin de seconde année, un nouveau projet a été réalisé, l'objectif était ici de mettre en pratique l'amélioration d'une application déjà existante. L'application était composée d'une application mobile android destinée à des étudiants cherchant un stage ainsi que d'un site web de back-office à destination du responsable des stages.</p>
+                                                    <p>Nous étions pour ce projet une équipe de 6 personnes, dont j'étais une fois encore le chef de projet. Les technologies du projet étaient imposées car nous devions améliorer une application déjà existante et fonctionnelle, pour l'application mobile, nous étions donc en Android c'est une bibliothèque Java que nous avons utilisé dans l'outil Android Studio. Pour le back-office, c'était le framework Symfony qui devait être utilisé avec le langage PHP.</p>
+                                                    <p>Ce projet a été complexe car tout semblait bien fonctionner aux premiers abords, donc nous avions commencé par faire des améliorations du côté de l'interface autant web que mobile. Cependant au cours du projet et notamment des tests, nous avons identifié de nombreux problèmes de redondances, de variables ou fonctions non utilisées, ou encore de requêtes incorrectes réalisées du côté de l'application mobile vers le serveur, notamment la base de données. La base de données a également été une amélioration à réaliser, nous l'avons passée sur la troisième forme normale en décomposant au maximum les données et les tables pour n'avoir aucune redondance et aucun champ vide.</p>
+                                                    <p>Finalement le projet a été plutôt stressant déjà par la difficulté d'une tâche que nous n'avions encore jamais réalisé, l'amélioration d'une application existante, ensuite, par le peu de temps qui nous était accordé. C'est un projet qui a été formateur autant sur la découverte d'un nouveau type de tâche que sur la gestion du stress.</p>
+                                                </div>
                                             </section>
                                         </section>
 
@@ -179,7 +195,13 @@
                                             <h3>Troisième année - BUT</h3>
                                             <section id="gamejam">
                                                 <h4>Game Jam - PORTO le robot</h4>
-                                                <img src="./elements/Jaquette_Porto.png" alt="jaquette de notre jeu, PORTO"/>
+                                                <img class="img-intxt left" src="./elements/Jaquette_Porto.png" alt="jaquette de notre jeu, PORTO"/>
+                                                <div class="txt-justify">
+                                                    <p>La troisième année du BUT a commencé par une GameJam d'une semaine, le langage et la bibliothèque à utiliser étaient imposés, nous devions utiliser Python avec la bibliothèque PyGame. Le thème de cette GameJam était "robots et gravité" et les équipes étaient constituées de 4 ou 5 personnes, pour ma part, j'étais dans une équipe de 4.</p>
+                                                    <p>Seulement un membre de l'équipe avait déjà participé à une GameJam et nous ne savions pas vraiment si le temps que nous avions était important ou très faible, pour limiter les risques nous avons choisi un type de jeu simple : le jeu de plateforme qui consiste à avoir un personnage qui se déplace de plateforme en plateforme à travers un niveau depuis le point de départ jusqu'à celui d'arrivée. Notre personnage était un petit robot nommé Porto, un robot envoyé par la Terre pour explorer le système spatial d'Exploranchon, système composé de 5 planètes, Imater, Eucletrade, Mistraal, Kadelior et Naeldra. Notre robot va explorer chaque planète pour les scanner, certaines planètes possèdant des infrastructures inconnues contenant de l'équipement utilisable par notre robot et lui offrant de nouvelles possibilités. Notre robot pouvant à l'origine uniquement sauter et marcher va ensuite pouvoir inverser l'effet de la gravité sur lui ou encore attirer des objets à lui. Ces différentes possibilités vont permettre d'explorer les différentes planètes possédant chacune une esthétique unique pour finalement réussir la mission initiale. Nous avons également construit un premier niveau de tutoriel qui permet à Porto de décoller vers l'espace pour sa mission. Une carte globale est également disponible pour passer d'un niveau à l'autre ou pour rejouer un niveau, on déplace, sur cette carte du système, le vaisseau de notre robot.</p>
+                                                    <p>Sur ce projet, je me suis occupé de construire les différents niveaux et de les concevoir, je me suis également occupé de construire l'histoire que nous n'avons pas réellement eu le temps de mettre à profit, de plus. J'ai également beaucoup participé à l'élaboration des mécaniques de jeu et j'ai réalisé un peu de code lorsque cela était nécessaire. Le travail n'a pas forcément été évident car 1 membre de l'équipe ne parvenait pas à comprendre ou ne souhaitait pas comprendre comment fonctionner la bibliothèque de jeu, ce qui fait qu'au final, sur une équipe de 4, nous avions un développeur, un graphiste/sound-designer et un level-designer et un membre qui réalisait de petites tâches et qui donnait son avis sur le jeu. Le projet a cependant été une réussite puisque notre jeu a terminé 5ème sur 25 jeux. Ce fût une bonne expérience et j'ai beaucoup apprécié me plonger dans le game-design et le développement d'un petit jeu-vidéo.</p>
+                                                    <p>Finalement ce projet nous a appris à travailler dans un état de stress constant, tout en nous permettant de mettre à profit des compétences spécifiques aux jeux vidéo.</p>
+                                                </div>
                                             </section>
                                         </section>
                                     </div>
@@ -191,9 +213,29 @@
                                             <h3>Stage au Fablab MASTIC - Université Grenoble Alpes</h3>
                                             <section>
                                                 <h4>Pages de statistiques et archivage</h4>
+                                                <div class="txt-justify">
+                                                    <p>Mon stage dans le FabLab MASTIC de l'Université Grenoble Alpes (UGA) débuta par une première mission dont l'objectif est d'intégrer des pages de statistiques pour les structures universitaires proposant leur matériel sur l'application de prêt de matériel MATOS.</p>
+                                                    <p>Pour cette mission, j'ai utilisé Django, un framework Python pour faire les traitements côté serveur et j'ai utilisé le framework Javascript Vue.JS pour construire l'interface. La majorité des calculs statistiques consistaient à récupérer un ensemble de données en base de données puis à réaliser un calcul simple en Python sur les données, pour enfin envoyer les données à l'interface pour qu'elle les affiche.</p>
+                                                    <p>Cette mission a également été l'occasion de découvrir le fonctionnement des fichiers PDF mais j'ai finalement décidé d'utiliser une bibliothèque permettant de construire des PDF plutôt que de les construire manuellement à partir des documentations des fichiers PDF. Du côté des statistiques et de l'interface, un grand nombre de paramètres sont offerts, du choix de la statistique au choix du tri, de la portée d'analyse ou de l'ordre d'affichage en comptant également certaines options de filtrage avancé.</p>
+                                                    <p>Cette mission a été extrêment positive en termes de découvertes et d'apprentissage car j'ai découvert les frameworks Django et Vue.JS ainsi que le fonctionnement des fichiers PDF.</p>
+                                                </div>
+                                                <img src="./elements/Page-DuréeMoyenneEmprunt-Objet-recherche_MATOS.png" alt="Maquette Page de Statistiques - Durée moyenne d'emprunt - MATOS"/>
+                                                <img src="./elements/Page-FréquenceEmprunt-Tag-recherche_MATOS.png" alt="Maquette Page de Statistiques - Fréquence d'emprunt - MATOS"/>
                                             </section>
                                             <section>
                                                 <h4>Adaptation Charte Graphique</h4>
+                                                <div class="txt-justify">
+                                                    <p>Au cours de mon stage, ma seconde mission fût d'adapter la charte graphique du site MATOS à la charte graphique de l'UGA (Université Grenoble Alpes), l'université n'ayant aucune consigne ou aucun document permettant de réaliser ce travail. Il a d'abord fallu regarder les autres sites déjà approuvés par l'université puis regarder leurs similarités pour pouvoir identifier la charte graphique.</p>
+                                                    <p>Après ce premier travail, j'ai remarqué que les couleurs ne sont pas toujours les mêmes j'ai donc réalisé plusieurs palettes de couleurs pour le site et les ai proposées à mon maitre de stage.</p>
+                                                    <p>Pour appliquer la palette, il a fallu ensuite que je m'attaque au SCSS (ou SASS) qui construit le CSS de la bibliothèque Bootstrap, de manière globale, appliquer la palette de couleurs directement dans Bootstrap en adaptant la bibliothèque permet d'appliquer la palette de couleurs à tout le site, certaines règles CSS ont cependant dû être modifié à la main, notamment toutes les règles particulières du site, heureusement les variables CSS permettent de simplifier ce travail.</p>
+                                                </div>
+                                                <div>
+                                                    <img src="./elements/Grille de couleurs_MATOS.png" alt="Charte Graphique - Proposition 1 - MATOS"/>
+                                                    <img src="./elements/Grille de couleurs-1_MATOS.png" alt="Charte Graphique - Proposition 2 - MATOS"/>
+                                                    <img src="./elements/Grille de couleurs-2_MATOS.png" alt="Charte Graphique - Proposition 3 - MATOS"/>
+                                                    <img src="./elements/Grille de couleurs-3_MATOS.png" alt="Charte Graphique - Proposition 4 - MATOS"/>
+                                                    <img src="./elements/Grille de couleurs-4_MATOS.png" alt="Charte Graphique - Proposition 5 - MATOS"/>
+                                                </div>
                                             </section>
                                         </section>
 
@@ -201,12 +243,15 @@
                                             <h3>Alternance chez Legi Team</h3>
                                             <section>
                                                 <h4>Outil d'assistance IA - écrire des résumés et des posts réseaux sociaux</h4>
+                                                <div class="txt-justify"></div>
                                             </section>
                                             <section>
                                                 <h4>Chatbot IA - assistant pour les utilisateurs</h4>
+                                                <div class="txt-justify"></div>
                                             </section>
                                             <section>
                                                 <h4>Génération automatique de tags IA</h4>
+                                                <div class="txt-justify"></div>
                                             </section>
                                         </section>
                                     </div>
@@ -216,6 +261,13 @@
                                     <div>
                                         <section id="mondesduvoile">
                                             <h3>Les Mondes du Voile</h3>
+                                            <img src="./elements/BannerMondesDuVoile.png" alt="Bannière - Les Mondes du Voile"/>
+                                            <div class="txt-justify">
+                                                <p>Comme je l'ai dit lors de ma présentation dans la partie "À propos de moi", j'ai construit mon propre univers pour y faire du jeu de rôle notamment, dans ce but, j'ai débuté fin d'année 2024 le développement de mon site web pour pouvoir y stocker et permettre l'accès à tout mon univers facilement.</p>
+                                                <p>Ce site web a plusieurs objectifs, dans un premier temps, servir de vitrine à mon univers et à mes projets personnels liés à cet univers. Dans un second temps, ce site a pour objectif de servir de compagnon pour les campagnes de jeu de rôle de mon univers en permettant de créer les fiches personnages, les stocker et jouer avec lors des parties de jeu.</p>
+                                                <p>Presque tout reste à faire, mais la partie conception du site en lui-même avance bien et la partie base de données et déjà terminée pour sa première version, car j'ai déjà conçu ma base et ses tables puis j'ai paramétré ma base de données PostGreSQL et ai formé les tables.</p>
+                                            </div>
+                                            <img src="./elements/HomePage_MondesduVoile.png" alt="Maquette de conception de la page d'accueil - Les Mondes du Voile"/>
                                         </section>
                                     </div>
                                 </li>

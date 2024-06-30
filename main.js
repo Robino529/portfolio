@@ -58,6 +58,18 @@ function definedSize() {
 window.onresize = definedSize;
 definedSize();*/
 
+function imgTitle(elem, show = true) {
+    const followerBlock = document.getElementById('follower');
+    if (show) {
+        const imgLegend = elem.getAttribute('alt');
+        followerBlock.textContent = imgLegend;
+        followerBlock.style.backgroundColor = "rgb(40, 40, 40)";
+    } else {
+        followerBlock.textContent = "";
+        followerBlock.style.backgroundColor = "transparent";
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
     const navBurger = document.getElementById('navbar');
@@ -66,4 +78,18 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.classList.toggle('open');
         navBurger.classList.toggle('open');
     });
+
+    document.addEventListener('mousemove', function(e) {
+        const follower = document.getElementById('follower');
+        follower.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+    });
+
+    document.querySelectorAll('img').forEach((elem) => {
+        elem.addEventListener('mouseenter', function(e) {
+            imgTitle(e.target);
+        });
+        elem.addEventListener('mouseleave', function(e) {
+            imgTitle(e.target, false);
+        })
+    })
 });

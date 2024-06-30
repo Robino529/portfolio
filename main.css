@@ -11,8 +11,12 @@ header {
     padding-bottom: 10px;
 }
 
-section > section {
-    margin-left: 3rem;
+img {
+    max-width: 100%;
+}
+
+section > section, #mondesduvoile {
+    margin: 0 3rem;
 }
 
 section > h3 {
@@ -83,7 +87,7 @@ aside h3 {
 #projects-list button+div {
     display: none;
     padding: 16px 0;
-    background-color: rgb(135, 177, 255);
+    background-color: rgb(236, 227, 255);
     padding-left: 15px;
 }
 
@@ -198,6 +202,36 @@ aside h3 {
 .txt-center {
     text-align: center;
 }
+
+.w-50 {
+    width: 50%;
+}
+
+.img-intxt {
+    padding: 10px;
+}
+
+.img-intxt.left {
+    float: left;
+}
+
+.img-intxt.right {
+    float: right;
+}
+
+#follower {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+}
+
+/* Menu BURGER */
 
 #burger {
     position: absolute;
