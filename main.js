@@ -41,6 +41,8 @@ function switchProjectCategory(buttonElem, forceOpen = false) {
         // on sélectionne le bouton
         buttonElem.className = buttonElem.className + " selected";
     }
+
+    scrollTo(0,0);
 }
 
 /*
