@@ -45,6 +45,10 @@ function switchProjectCategory(buttonElem, forceOpen = false) {
     scrollTo(0,0);
 }
 
+function switchHiddenNextDivSommaire(elem) {
+    elem.parentElement.nextElementSibling.hidden = !elem.parentElement.nextElementSibling.hidden;
+}
+
 /*
 function definedSize() {
     const boxsize = window.innerHeight - document.querySelector('header').clientHeight;
@@ -75,6 +79,7 @@ function imgTitle(elem, show = true) {
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
     const navBurger = document.getElementById('navbar');
+    const sommaireProjects = document.getElementById('sommaire-projects');
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('open');
